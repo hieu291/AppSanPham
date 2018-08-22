@@ -5,10 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#e2e2e2">
+        <LinearLayout
+            android:background="#e2e2e2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/add" />
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp"
+                    android:text="Them San pham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+        </LinearLayout>
         <ListView
+            android:background="#ffffff"
+            android:layout_margin="16dp"
             android:id="@+id/lvSanpham"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </ListView>
+
 </LinearLayout>
